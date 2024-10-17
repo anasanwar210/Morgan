@@ -1,0 +1,59 @@
+@media (max-width: 992px) {
+  nav {
+    margin: 10px;
+  }
+
+  nav .container .bars .open-menu {
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  :root:has(#menu:checked) .navbar-expand-lg .navbar-collapse {
+    display: block;
+  }
+
+  :root:has(#close-menu:checked) .navbar-expand-lg .navbar-collapse ,
+  :root:has(#close-menu:checked) #overlay
+  {
+    display: none;
+  }
+
+  #menu:checked ~ #overlay {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+
+  nav .container .navbar-collapse > ul {
+    display: flex;
+    position: absolute;
+    inset: 0;
+    margin-top: calc(100vh - 95vh);
+    background-color: white;
+    height: 95vh;
+  }
+
+  nav .container .navbar-collapse ul li.nav-item a {
+    font-size: 15px;
+    color: #000 !important;
+    font-weight: 600;
+  }
+
+  nav .container .navbar-collapse ul li.nav-item label svg {
+    color: #000 !important;
+  }
+
+  header .main-text :where(h2, p) {
+    font-size: 3rem;
+    line-height: 55px;
+  }
+
+  .animated .typewriter {
+    font-size: 1.5rem;
+    line-height: 60px;
+  }
+}

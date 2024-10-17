@@ -3,8 +3,9 @@ body {
     "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
     "Noto Color Emoji";
   text-transform: capitalize;
-  /* height: 625rem; */
+  position: relative;
 }
+
 /* Deep Dropdown Menu */
 .dropdown-menu li {
   position: relative;
@@ -21,7 +22,7 @@ body {
   display: block;
 }
 
-/* 
+/*
 =================================================
                   Start Navbar
 =================================================
@@ -35,12 +36,14 @@ nav .container h1 > a {
   font-size: 1.75rem;
   line-height: 2.1rem;
   letter-spacing: 0.0625rem;
+  text-transform: uppercase;
 }
 
 nav div.collapse ul li > a {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 nav div.collapse ul.dropdown-menu li > a {
@@ -49,12 +52,27 @@ nav div.collapse ul.dropdown-menu li > a {
   padding: 0.625rem 1.25rem;
 }
 
-.navbar .navbar-toggler {
+nav .navbar .navbar-toggler {
   font-size: 1.5625rem;
 }
 
-.navbar .navbar-toggler:focus {
+nav .navbar .navbar-toggler:focus {
   box-shadow: none;
+}
+
+nav .container .navbar-collapse ul.navbar-nav li.nav-item{
+  position: relative;
+}
+
+nav .container .navbar-collapse ul.navbar-nav li.nav-item   a::after{
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #fff;
+  width: 50%;
+  bottom: 0;
+  left: 0%;
+  /* transform: translateX(100%); */
+
 }
 
 /* 
@@ -77,14 +95,14 @@ header {
   background-blend-mode: overlay;
 }
 
-header .main-text :where(h2,p) {
+header .main-text :where(h2, p) {
   font-size: 4.5rem;
   line-height: 5.4rem;
   font-weight: 600;
 }
 
-.animated .typewriter{
-  font-size: 40px;
+.animated .typewriter {
+  font-size: 2.5rem;
   line-height: 60px;
 }
 .animated .typewriter::before {

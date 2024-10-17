@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -29,45 +30,55 @@
 					Start NavBar
 	============================
 	-->
+	<!-- Designer
+	Developer
+	Freelancer
+	Photographer -->
 
 	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
 			<h1><a class="navbar-brand text-white text-capitalize fw-bold" href="#">DevFolio</a></h1>
-			<button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+			<div class="bars d-lg-none">
+				<input type="checkbox" name="menu" id="menu" />
+				<label for="menu" id="overlay"></label>
+				<label for="menu" class="open-menu text-white">
 					<i class="fa-solid fa-bars"></i>
-				</span>
-			</button>
+				</label>
+			</div>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase active" aria-current="page" href="#">home</a>
+					<li class="nav-item x-mark d-lg-none">
+						<input type="checkbox" name="close-menu" id="close-menu" class="d-none">
+						<label for="close-menu">
+							<i class="fa-solid fa-xmark nav-link  text-white"></i>
+						</label>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link bg-info  text-white text-uppercase active" aria-current="page" href="#">home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">about</a>
+						<a class="nav-link  text-white text-uppercase" href="#">about</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">services</a>
+						<a class="nav-link  text-white text-uppercase" href="#">services</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">work</a>
+						<a class="nav-link  text-white text-uppercase" href="#">work</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">blog</a>
+						<a class="nav-link  text-white text-uppercase" href="#">blog</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link text-uppercase p-2 p-lg-3 text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+						<a class="nav-link text-uppercase  text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 							aria-expanded="false">
-							Drop down
+							drop down
 						</a>
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="#">drop down 1</a></li>
 							<li>
-								<a class="nav-link p-2 p-lg-3 dropdown-item" href="#" role="button" data-bs-toggle="dropdown"
+								<a class="nav-link  dropdown-item" href="#" role="button" data-bs-toggle="dropdown"
 									aria-expanded="false">
-									deep drop down <i class="fa-solid fa-arrow-circle-right"></i>
+									deep drop down <i class="fa-solid fa-chevron-right"></i>
 								</a>
 								<ul class="dropdown-menu dropdown-submenu">
 									<li><a class="dropdown-item" href="#">drop down 1</a></li>
@@ -84,16 +95,16 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">contact</a>
+						<a class="nav-link text-white text-uppercase" href="#">contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<header>
-		<div class="inner ">
-			<div class="main-text text-white d-flex justify-content-center align-items-center flex-column vh-100">
+	<header class="container-fluid">
+		<div class="inner row">
+			<div class="main-text col-sm-8 m-auto text-center text-white d-flex justify-content-center align-items-center flex-column vh-100">
 				<h2>I am Morgan Freeman</h2>
 				<div class="animated">
 					<p class="typewriter"></p>
