@@ -4,11 +4,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Roboto Font -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+
+	<!-- For Site Tab -->
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<title>DevFolio Bootstrap Portfolio Template - Index</title>
+
+	<!-- Bootstrap - Font Awesome - Styling -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<title>DevFolio Bootstrap Portfolio Template - Index</title>
 </head>
 
 <body>
@@ -18,7 +30,77 @@
 	============================
 	-->
 
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container">
+			<h1><a class="navbar-brand text-white text-capitalize fw-bold" href="#">DevFolio</a></h1>
+			<button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
+					<i class="fa-solid fa-bars"></i>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase active" aria-current="page" href="#">home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">about</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">blog</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link text-uppercase p-2 p-lg-3 text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Drop down
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">drop down 1</a></li>
+							<li>
+								<a class="nav-link p-2 p-lg-3 dropdown-item" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									deep drop down <i class="fa-solid fa-arrow-circle-right"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-submenu">
+									<li><a class="dropdown-item" href="#">drop down 1</a></li>
+									<li><a class="dropdown-item" href="#">drop down 2</a></li>
+									<li><a class="dropdown-item" href="#">drop down 3</a></li>
+									<li><a class="dropdown-item" href="#">drop down 4</a></li>
+									<li><a class="dropdown-item" href="#">drop down 5</a></li>
+								</ul>
+							</li>
+							<li><a class="dropdown-item" href="#">drop down 2</a></li>
+							<li><a class="dropdown-item" href="#">drop down 3</a></li>
+							<li><a class="dropdown-item" href="#">drop down 4</a></li>
+							<li><a class="dropdown-item" href="#">drop down 5</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-2 p-lg-3 text-white text-uppercase" href="#">contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
+	<header>
+		<div class="inner ">
+			<div class="main-text text-white d-flex justify-content-center align-items-center flex-column vh-100">
+				<h2>I am Morgan Freeman</h2>
+				<div class="animated">
+					<p class="typewriter"></p>
+				</div>
+			</div>
+		</div>
+	</header>
 
 	<!-- 
 	============================

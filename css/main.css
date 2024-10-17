@@ -2,4 +2,169 @@ body {
   font-family: system-ui -apple-system "Segoe UI" Roboto "Helvetica Neue" "Noto Sans"
     "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
     "Noto Color Emoji";
+  text-transform: capitalize;
+  /* height: 625rem; */
 }
+/* Deep Dropdown Menu */
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -0.4375rem;
+}
+
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
+
+/* 
+=================================================
+                  Start Navbar
+=================================================
+*/
+
+nav {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav .container h1 > a {
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+  letter-spacing: 0.0625rem;
+}
+
+nav div.collapse ul li > a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+nav div.collapse ul.dropdown-menu li > a {
+  font-size: 0.875rem;
+  letter-spacing: 0.025rem;
+  padding: 0.625rem 1.25rem;
+}
+
+.navbar .navbar-toggler {
+  font-size: 1.5625rem;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* 
+=================================================
+                  End Navbar
+=================================================
+*/
+
+/* 
+=================================================
+                Start Landing page
+=================================================
+*/
+
+header {
+  background-image: url(../images/landing.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+header .main-text :where(h2,p) {
+  font-size: 4.5rem;
+  line-height: 5.4rem;
+  font-weight: 600;
+}
+
+.animated .typewriter{
+  font-size: 40px;
+  line-height: 60px;
+}
+.animated .typewriter::before {
+  content: "";
+  border-right: 7px solid white;
+  animation: blink 0.9s infinite, typing 10s infinite;
+}
+
+@keyframes blink {
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0%,
+  54.54%,
+  100% {
+    content: "de";
+  }
+  3.03%,
+  51.51% {
+    content: "dev";
+  }
+  6.06%,
+  48.48% {
+    content: "deve";
+  }
+  9.09%,
+  45.45% {
+    content: "devel";
+  }
+  12.12%,
+  42.42% {
+    content: "develo";
+  }
+  15.15%,
+  39.39% {
+    content: "develop";
+  }
+  18.18%,
+  36.36% {
+    content: "develope";
+  }
+  21.21%,
+  24.24%,
+  27.27%,
+  30.3% {
+    content: "developer";
+  }
+  57.57%,
+  96.96% {
+    content: "des";
+  }
+  60.6%,
+  93.93% {
+    content: "desi";
+  }
+  63.63%,
+  90.9% {
+    content: "desig";
+  }
+  66.66%,
+  87.87% {
+    content: "design";
+  }
+  69.69%,
+  84.84% {
+    content: "designe";
+  }
+  72.72%,
+  75.75%,
+  78.78%,
+  81% {
+    content: "designer";
+  }
+}
+
+/* 
+=================================================
+                  End Landing page
+=================================================
+*/
