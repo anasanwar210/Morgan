@@ -48,7 +48,6 @@ body:not(body:has(:target))
   a.home {
   border-bottom: 2px solid #fff;
   width: 75%;
-  transform: translateX();
 }
 
 /*
@@ -110,6 +109,17 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item::after {
 nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
   width: 45%;
 }
+
+nav .container .navbar-collapse ul.dropdown-menu li a {
+  transition: color 0.3s linear;
+}
+nav .container .navbar-collapse ul.dropdown-menu li:hover > a {
+  color: rgb(0, 120, 255) ;
+}
+/* 
+nav .container .navbar-collapse ul.dropdown-menu{
+
+} */
 
 /* 
 =================================================
