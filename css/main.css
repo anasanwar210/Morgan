@@ -14,12 +14,41 @@ body {
 .dropdown-menu .dropdown-submenu {
   display: none;
   position: absolute;
-  left: 100%;
+  right: 100%;
   top: -0.4375rem;
 }
 
 .dropdown-menu > li:hover > .dropdown-submenu {
   display: block;
+}
+
+/* body:not(body:has(:target)) nav .container .nav-links li a[href="#home"],
+body:has(.home:target) nav .container .nav-links li a[href="#home"],
+body:has(.chefs:target) nav .container .nav-links li a[href="#chefs"],
+body:has(.gallery:target) nav .container .nav-links li a[href="#gallery"],
+body:has(.contact:target) nav .container .nav-links li a[href="#contact"] {
+  color: var(--black-color);
+  border-bottom: 2px solid var(--main-color);
+  } */
+
+/* Target NavBar Links */
+body:not(body:has(:target))
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li.nav-item
+  a.home,
+:has(.home:target)
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li.nav-item
+  a.home {
+  border-bottom: 2px solid #fff;
+  width: 75%;
+  transform: translateX();
 }
 
 /*
@@ -30,6 +59,10 @@ body {
 
 nav {
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav input {
+  display: none;
 }
 
 nav .container h1 > a {
@@ -60,19 +93,22 @@ nav .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
 
-nav .container .navbar-collapse ul.navbar-nav li.nav-item{
+nav .container .navbar-collapse ul.navbar-nav li.nav-item {
   position: relative;
 }
 
-nav .container .navbar-collapse ul.navbar-nav li.nav-item   a::after{
+nav .container .navbar-collapse ul.navbar-nav li.nav-item::after {
   content: "";
   position: absolute;
   border-bottom: 2px solid #fff;
-  width: 50%;
-  bottom: 0;
-  left: 0%;
-  /* transform: translateX(100%); */
+  width: 0;
+  bottom: 14%;
+  left: 15%;
+  transition: width 0.3s linear;
+}
 
+nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
+  width: 45%;
 }
 
 /* 

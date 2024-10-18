@@ -12,9 +12,7 @@
     display: block;
   }
 
-  :root:has(#close-menu:checked) .navbar-expand-lg .navbar-collapse ,
-  :root:has(#close-menu:checked) #overlay
-  {
+  :root:has(#menu:checked) label.open-menu {
     display: none;
   }
 
