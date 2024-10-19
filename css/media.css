@@ -1,3 +1,9 @@
+/*
+=================================================
+                  Start Navbar
+=================================================
+*/
+
 @media (max-width: 992px) {
   nav {
     margin: 10px;
@@ -18,11 +24,8 @@
 
   #menu:checked ~ #overlay {
     background-color: rgba(255, 255, 255, 0.4);
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: sticky;
+    inset: 0;
     transition: all 0.3s linear;
   }
 
@@ -42,7 +45,42 @@
   }
 
   nav .container .navbar-collapse ul li.nav-item label svg {
-    color: #000 !important;
+    color: #fff;
+  }
+
+  nav .container .navbar-collapse ul.navbar-nav li.x-mark {
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #21212188;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  nav .container .navbar-collapse ul.navbar-nav :where(li.x-mark, svg) {
+    cursor: pointer;
+  }
+
+  nav .container .navbar-collapse ul.navbar-nav li.x-mark:after {
+    border: none;
+  }
+
+  nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover > a {
+    color: var(--blue-color) !important;
+  }
+
+  nav .container .navbar-collapse ul.dropdown-menu li:hover > a {
+    color: var(--blue-color) !important;
+  }
+
+  nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
+    width: 0;
   }
 
   header .main-text :where(h2, p) {
@@ -53,5 +91,53 @@
   .animated .typewriter {
     font-size: 1.5rem;
     line-height: 60px;
+  }
+}
+
+/* Nested Drop Down */
+
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    right: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
+}
+
+/*
+=================================================
+                  End Navbar
+=================================================
+*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about .info img {
+    width: 100%;
+    margin: auto;
   }
 }

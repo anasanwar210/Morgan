@@ -1,54 +1,28 @@
+:root {
+  --blue-color: #0078ff;
+}
+
 body {
   font-family: system-ui -apple-system "Segoe UI" Roboto "Helvetica Neue" "Noto Sans"
     "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
     "Noto Color Emoji";
   text-transform: capitalize;
   position: relative;
+  overflow-x: hidden;
 }
 
-/* Deep Dropdown Menu */
-.dropdown-menu li {
-  position: relative;
-}
-
-.dropdown-menu .dropdown-submenu {
-  display: none;
-  position: absolute;
-  right: 100%;
-  top: -0.4375rem;
-}
-
-.dropdown-menu > li:hover > .dropdown-submenu {
-  display: block;
-}
-
-/* body:not(body:has(:target)) nav .container .nav-links li a[href="#home"],
-body:has(.home:target) nav .container .nav-links li a[href="#home"],
-body:has(.chefs:target) nav .container .nav-links li a[href="#chefs"],
-body:has(.gallery:target) nav .container .nav-links li a[href="#gallery"],
-body:has(.contact:target) nav .container .nav-links li a[href="#contact"] {
-  color: var(--black-color);
-  border-bottom: 2px solid var(--main-color);
-  } */
-
-/* Target NavBar Links */
-body:not(body:has(:target))
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li.nav-item
-  a.home,
-:has(.home:target)
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li.nav-item
-  a.home {
+body:not(body:has(:target)) nav .container .navbar-collapse ul.navbar-nav li > a[href="#home"],
+body:has(.home:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#home"],
+body:has(.about:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#about"],
+body:has(.services:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#services"],
+body:has(.work:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#work"] {
+  color: red;
   border-bottom: 2px solid #fff;
-  width: 75%;
-}
+  }
+
+
+
+
 
 /*
 =================================================
@@ -94,6 +68,7 @@ nav .navbar .navbar-toggler:focus {
 
 nav .container .navbar-collapse ul.navbar-nav li.nav-item {
   position: relative;
+  padding: 0 2%;
 }
 
 nav .container .navbar-collapse ul.navbar-nav li.nav-item::after {
@@ -110,16 +85,11 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
   width: 45%;
 }
 
-nav .container .navbar-collapse ul.dropdown-menu li a {
-  transition: color 0.3s linear;
+nav.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 0;
+  padding-left: 0;
 }
-nav .container .navbar-collapse ul.dropdown-menu li:hover > a {
-  color: rgb(0, 120, 255) ;
-}
-/* 
-nav .container .navbar-collapse ul.dropdown-menu{
 
-} */
 
 /* 
 =================================================
@@ -232,3 +202,42 @@ header .main-text :where(h2, p) {
                   End Landing page
 =================================================
 */
+.about .container {
+  padding: 6% 0;
+}
+
+.about .container .skills ul li {
+  font-size: 1rem;
+  /* line-height: 34px; */
+}
+
+.about .container .skills ul li span {
+  font-size: 1.1rem;
+}
+
+.about .container .skills .prog h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about .container .about-me h2 {
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  width: fit-content;
+}
+
+.about .container .about-me h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 80%;
+  border-bottom: 3px solid var(--blue-color);
+}
+
+.about .container .about-me p {
+  font-size: 20px;
+  font-weight: 300;
+}

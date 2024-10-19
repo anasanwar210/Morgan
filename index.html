@@ -67,31 +67,21 @@
 					<li class="nav-item p-2 p-lg-2">
 						<a class="blog nav-link text-white text-uppercase" href="#blog">blog</a>
 					</li>
-					<li class="nav-item p-2 p-lg-2 dropdown">
-						<a class="drop-down nav-link text-uppercase  text-white dropdown-toggle" href="#drop-down" role="button"
-							data-bs-toggle="dropdown" aria-expanded="false">
-							drop down
-						</a>
-						<ul class="dropdown-menu p-2">
-							<li><a class="dropdown-item" href="#">drop down 1</a></li>
-							<li>
-								<a class="nav-link  dropdown-item" href="" role="button" data-bs-toggle="dropdown"
-									aria-expanded="false">
-									deep drop down <i class="fa-solid fa-chevron-right"></i>
-								</a>
-								<ul class="dropdown-menu dropdown-submenu p-2">
-									<li><a class="dropdown-item" href="#">drop down 1</a></li>
-									<li><a class="dropdown-item" href="#">drop down 2</a></li>
-									<li><a class="dropdown-item" href="#">drop down 3</a></li>
-									<li><a class="dropdown-item" href="#">drop down 4</a></li>
-									<li><a class="dropdown-item" href="#">drop down 5</a></li>
-								</ul>
+					<li class="nav-item dropdown d-md-flex justify-content-md-center align-items-md-center">
+						<a class="nav-link text-white dropdown-toggle" href="#" data-bs-toggle="dropdown"> Deep Dropdown </a>
+							<ul class="dropdown-menu dropdown-menu-right">
+							<li><a class="dropdown-item" href="#"> Dropdown item 1</a></li>
+							<li><a class="dropdown-item" href="#"> Dropdown item 2 </a></li>
+							<li><a class="dropdown-item" href="#"> Dropdown item 3 &raquo; </a>
+								 <ul class="submenu submenu-left dropdown-menu">
+									<li><a class="dropdown-item" href="">Submenu item 1</a></li>
+									<li><a class="dropdown-item" href="">Submenu item 2</a></li>
+									<li><a class="dropdown-item" href="">Submenu item 3</a></li>
+									<li><a class="dropdown-item" href="">Submenu item 4</a></li>
+							 </ul>
 							</li>
-							<li><a class="dropdown-item" href="#">drop down 2</a></li>
-							<li><a class="dropdown-item" href="#">drop down 3</a></li>
-							<li><a class="dropdown-item" href="#">drop down 4</a></li>
-							<li><a class="dropdown-item" href="#">drop down 5</a></li>
-						</ul>
+							<li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
+							</ul>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
 						<a class="contact nav-link  text-white text-uppercase" href="#contact">contact</a>
@@ -100,6 +90,17 @@
 			</div>
 		</div>
 	</nav>
+
+	<!-- 
+		============================
+						Start NavBar
+		============================
+		-->
+	<!-- 
+		============================
+						Start Header
+		============================
+		-->
 
 	<header class="container-fluid">
 		<div class="inner row">
@@ -114,12 +115,72 @@
 	</header>
 
 	<!-- 
-	============================
-					Start NavBar
-	============================
-	-->
+		============================
+						End Header
+		============================
+		-->
 
+	<!-- 
+		============================
+						Start About
+		============================
+		-->
 
+	<section id="#about" class="about">
+		<div class="container">
+			<div class="inner shadow">
+				<div class="row p-lg-4 p-2 px-lg-5">
+					<div class="skills d-md-flex flex-md-column col-lg-6 ">
+						<div class="info d-md-flex justify-content-md-between align-items--md-center col-md-12">
+							<div class="about-img mb-3 ms-2 col-md-4 col-lg-4">
+								<img src="images/testimonial-2.jpg" alt="Morgan Freeman">
+							</div>
+							<ul class="px-0 d-flex flex-column justify-content-center list-unstyled col-md-6 col-lg-8">
+								<li class="lh-lg"><span class="fw-bold">Name: </span>Morgen Freeman</li>
+								<li class="lh-lg"><span class="fw-bold">Profile: </span>Full Stack Developer</li>
+								<li class="lh-lg"><span class="fw-bold">Email: </span>contact@example.com</li>
+								<li class="lh-lg"><span class="fw-bold">Phone: </span>(617) 557-0089</li>
+							</ul>
+						</div>
+						<div class="prog mb-5">
+							<h2>Skills</h2>
+							<p class="lh-lg mb-0 mt-3">HTML 85%</p>
+							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="progress-bar" style="width: 85%"></div>
+							</div>
+							<p class="lh-lg mb-0 mt-3">CSS3 75%</p>
+							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="progress-bar" style="width: 75%"></div>
+							</div>
+							<p class="lh-lg mb-0 mt-3">PHP 50%</p>
+							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="progress-bar" style="width: 50%"></div>
+							</div>
+							<p class="lh-lg mb-0 mt-3">Javascript 90%</p>
+							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
+								aria-valuemax="100">
+								<div class="progress-bar" style="width: 90%"></div>
+							</div>
+						</div>
+					</div>
+					<div class="about-me col-lg-6">
+						<h2 class="pb-2 mb-3">About Me</h2>
+						<p class="lh-base">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+							imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+							Nulla
+							porttitor accumsan tincidunt.</p>
+						<p class="lh-base">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
+							volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+						<p class="lh-base">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+							porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/all.min.js"></script>
