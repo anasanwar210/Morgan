@@ -23,6 +23,28 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
+<!-- 
+<style>
+	.scroll-to-top {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		background-color: #007bff;
+		color: white;
+		padding: 10px 20px;
+		border-radius: 50px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		text-align: center;
+		text-decoration: none;
+		font-size: 18px;
+		display: block;
+	}
+
+	.scroll-to-top:hover {
+		background-color: #0056b3;
+		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	}
+</style> -->
 
 <body>
 	<!-- 
@@ -69,19 +91,19 @@
 					</li>
 					<li class="nav-item dropdown d-md-flex justify-content-md-center align-items-md-center">
 						<a class="nav-link text-white dropdown-toggle" href="#" data-bs-toggle="dropdown"> Deep Dropdown </a>
-							<ul class="dropdown-menu dropdown-menu-right">
+						<ul class="dropdown-menu dropdown-menu-right">
 							<li><a class="dropdown-item" href="#"> Dropdown item 1</a></li>
 							<li><a class="dropdown-item" href="#"> Dropdown item 2 </a></li>
 							<li><a class="dropdown-item" href="#"> Dropdown item 3 &raquo; </a>
-								 <ul class="submenu submenu-left dropdown-menu">
+								<ul class="submenu submenu-left dropdown-menu">
 									<li><a class="dropdown-item" href="">Submenu item 1</a></li>
 									<li><a class="dropdown-item" href="">Submenu item 2</a></li>
 									<li><a class="dropdown-item" href="">Submenu item 3</a></li>
 									<li><a class="dropdown-item" href="">Submenu item 4</a></li>
-							 </ul>
+								</ul>
 							</li>
 							<li><a class="dropdown-item" href="#"> Dropdown item 4 </a></li>
-							</ul>
+						</ul>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
 						<a class="contact nav-link  text-white text-uppercase" href="#contact">contact</a>
@@ -102,7 +124,7 @@
 		============================
 		-->
 
-	<header class="container-fluid">
+	<header id="home" class="home container-fluid">
 		<div class="inner row">
 			<div
 				class="main-text col-sm-8 m-auto text-center text-white d-flex justify-content-center align-items-center flex-column vh-100">
@@ -118,7 +140,7 @@
 		============================
 						End Header
 		============================
-		-->
+	-->
 
 	<!-- 
 		============================
@@ -126,14 +148,14 @@
 		============================
 		-->
 
-	<section id="#about" class="about">
+	<section id="about" class="about">
 		<div class="container">
 			<div class="inner shadow">
 				<div class="row p-lg-4 p-2 px-lg-5">
 					<div class="skills d-md-flex flex-md-column col-lg-6 ">
 						<div class="info d-md-flex justify-content-md-between align-items--md-center col-md-12">
 							<div class="about-img mb-3 ms-2 col-md-4 col-lg-4">
-								<img src="images/testimonial-2.jpg" alt="Morgan Freeman">
+								<img class="rounded-4" src="images/testimonial-2.jpg" alt="Morgan Freeman">
 							</div>
 							<ul class="px-0 d-flex flex-column justify-content-center list-unstyled col-md-6 col-lg-8">
 								<li class="lh-lg"><span class="fw-bold">Name: </span>Morgen Freeman</li>
@@ -168,23 +190,152 @@
 					</div>
 					<div class="about-me col-lg-6">
 						<h2 class="pb-2 mb-3">About Me</h2>
-						<p class="lh-base">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-							imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-							Nulla
-							porttitor accumsan tincidunt.</p>
-						<p class="lh-base">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor
-							volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
-						<p class="lh-base">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
-							porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+						<p class="lh-base">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
+							accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas
+							non nisi.
+							Nulla porttitor accumsan tincidunt.</p>
+						<p class="lh-base">Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget
+							felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor
+							at sem.</p>
+						<p class="lh-base">Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum
+							id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- 
+		============================
+						End About
+		============================
+		-->
+	<!-- 
+		============================
+						Start Services
+		============================
+	-->
+	<section id="services" class="services">
+		<div class="container text-center my-5">
+			<div class="desc">
+				<h2 class="mb-2 fw-bold">SERVICES</h2>
+				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fas fa-briefcase"></i>
+						</div>
+						<h4>WEB DESIGN</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fa-solid fa-list-check"></i>
+						</div>
+						<h4>WEB Development</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fa-solid fa-chart-simple"></i>
+						</div>
+						<h4>Photography</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fa-solid fa-binoculars"></i>
+						</div>
+						<h4>Responsive Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fa-regular fa-sun"></i>
+						</div>
+						<h4>Graphic Design</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="service-card">
+						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+							<i class="fa-regular fa-calendar-days"></i>
+						</div>
+						<h4>Marketing Services</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+							provident vitae! Magni tempora perferendis eum non provident.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 
+		============================
+						End Services
+		============================
+	-->
+	<!-- 
+		============================
+						Start Counter
+		============================
+	-->
 
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/all.min.js"></script>
-	<script src="js/main.js"></script>
+
+	<div id="counter" class="counter">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 stat">
+					<div class="icon">
+						<i class="fas fa-check"></i>
+					</div>
+					<h4>450 WORKS COMPLETED</h4>
+				</div>
+				<div class="col-md-3 stat">
+					<div class="icon">
+						<i class="fas fa-file-alt"></i>
+					</div>
+					<h4>25 YEARS OF EXPERIENCE</h4>
+				</div>
+				<div class="col-md-3 stat">
+					<div class="icon">
+						<i class="fas fa-users"></i>
+					</div>
+					<h4>550 TOTAL CLIENTS</h4>
+				</div>
+				<div class="col-md-3 stat">
+					<div class="icon">
+						<i class="fas fa-award"></i>
+					</div>
+					<h4>48 AWARD WON</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 
+		============================
+						End Counter
+		============================
+	-->
+
+	<!-- <a href="#top" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a> -->
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 :root {
   --blue-color: #0078ff;
+  --text-color: #4e4e4e;
 }
 
 body {
@@ -7,22 +8,48 @@ body {
     "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
     "Noto Color Emoji";
   text-transform: capitalize;
-  position: relative;
+  /* position: relative; */
   overflow-x: hidden;
+  background-color: #f5f5f5;
 }
 
-body:not(body:has(:target)) nav .container .navbar-collapse ul.navbar-nav li > a[href="#home"],
-body:has(.home:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#home"],
-body:has(.about:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#about"],
-body:has(.services:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#services"],
-body:has(.work:target) nav .container .navbar-collapse ul.navbar-nav li > a[href="#work"] {
-  color: red;
+body:not(body:has(:target))
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li
+  > a[href="#home"],
+body:has(.home:target)
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li
+  > a[href="#home"],
+body:has(.about:target)
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li
+  > a[href="#about"],
+body:has(.services:target)
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li
+  > a[href="#services"],
+body:has(.work:target)
+  nav
+  .container
+  .navbar-collapse
+  ul.navbar-nav
+  li
+  > a[href="#work"] {
   border-bottom: 2px solid #fff;
-  }
-
-
-
-
+}
 
 /*
 =================================================
@@ -85,11 +112,10 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
   width: 45%;
 }
 
-nav.navbar-expand-lg .navbar-nav .nav-link{
+nav.navbar-expand-lg .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
-
 
 /* 
 =================================================
@@ -202,6 +228,12 @@ header .main-text :where(h2, p) {
                   End Landing page
 =================================================
 */
+
+/* 
+=================================================
+                  Start About
+=================================================
+*/
 .about .container {
   padding: 6% 0;
 }
@@ -241,3 +273,111 @@ header .main-text :where(h2, p) {
   font-size: 20px;
   font-weight: 300;
 }
+
+/* 
+=================================================
+                  End About
+=================================================
+*/
+
+/* 
+=================================================
+                Start Services
+=================================================
+*/
+
+#services .container h2 {
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+#services .container .desc {
+  position: relative;
+}
+
+#services .container .desc p {
+  font-size: 16px;
+  /* line-height:24px; */
+}
+
+#services .container .desc p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 5px;
+  background-color: var(--blue-color);
+}
+
+#services .service-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#services .service-card .icon {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  color: #000;
+  padding: 12%;
+  margin: auto;
+  border: 10px solid var(--blue-color);
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+#services .service-card:hover .icon {
+  color: #fff;
+  border-color: #d1e0f7;
+  background-color: var(--blue-color);
+}
+
+#services .service-card h4 {
+  margin-bottom: 15px;
+  font-size: 22.4px;
+  font-weight: 500;
+}
+#services .service-card p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+/* 
+=================================================
+                End Services
+=================================================
+*/
+
+/* 
+=================================================
+                Start Counter
+=================================================
+*/
+
+#counter {
+  background-image: url(../images/counters-bg.jpg);
+  background-color: var(--blue-color);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+#counter .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+/* 
+=================================================
+                End Counter
+=================================================
+*/
