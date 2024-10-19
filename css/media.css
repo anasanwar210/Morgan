@@ -51,7 +51,7 @@
   nav .container .navbar-collapse ul.navbar-nav li.x-mark {
     position: absolute;
     top: -5%;
-    right: 5%;
+    right: 0%;
     width: 40px;
     height: 40px;
     font-size: 25px;
@@ -61,9 +61,10 @@
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    color: #fff;
   }
 
-  nav .container .navbar-collapse ul.navbar-nav :where(li.x-mark, svg) {
+  nav .container .navbar-collapse ul.navbar-nav :where(li.x-mark, label) {
     cursor: pointer;
   }
 

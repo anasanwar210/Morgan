@@ -1,6 +1,6 @@
 :root {
-  --blue-color: #0078ff;
-  --text-color: #4e4e4e;
+  --blue-color: rgb(0, 120, 255);
+  --text-color: rgb(78, 78, 78);
 }
 
 body {
@@ -8,7 +8,6 @@ body {
     "Liberation Sans" Arial sans-serif "Apple Color Emoji" "Segoe UI Emoji" "Segoe UI Symbol"
     "Noto Color Emoji";
   text-transform: capitalize;
-  /* position: relative; */
   overflow-x: hidden;
   background-color: #f5f5f5;
 }
@@ -372,12 +371,70 @@ header .main-text :where(h2, p) {
   padding: 50px 0;
   text-align: center;
 }
+
 #counter .icon {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 32px;
+  margin: auto;
+  border: 10px solid rgb(205, 225, 248);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
+
+#counter .stat span {
+  font-size: 2rem;
+  line-height: 48px;
+}
+
+#counter .stat h4 {
+  font-size: 1rem;
+  line-height: 24px;
+}
+
 /* 
 =================================================
                 End Counter
 =================================================
 */
+
+.slider {
+  background-image: url(../images/overlay-bg.jpg);
+  background-color: var(--blue-color);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5% 0;
+}
+
+.slider .img-contain {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -90%);
+}
+
+.slider .carousel-inner{
+  padding-top: 15%;
+}
+
+.slider h5 {
+  font-size: 22.4px;
+  line-height: 33.6px;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.slide p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
