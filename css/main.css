@@ -12,42 +12,61 @@ body {
   background-color: #f5f5f5;
 }
 
-body:not(body:has(:target))
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li
-  > a[href="#home"],
-body:has(.home:target)
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li
-  > a[href="#home"],
-body:has(.about:target)
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li
-  > a[href="#about"],
-body:has(.services:target)
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li
-  > a[href="#services"],
-body:has(.work:target)
-  nav
-  .container
-  .navbar-collapse
-  ul.navbar-nav
-  li
-  > a[href="#work"] {
+/* Target NavBar Links */
+
+body:not(body:has(:target)) a[href="#home"],
+body:has(.home:target) a[href="#home"],
+body:has(.about:target) a[href="#about"],
+body:has(.services:target) a[href="#services"],
+body:has(.portfolio:target) a[href="#portfolio"],
+body:has(.blog:target) a[href="#blog"] {
   border-bottom: 2px solid #fff;
+}
+
+/* Back To Top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Global */
+:where(.service, .portfolio, .blog) .container h2 {
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+:where(.service, .portfolio, .blog) .container .desc {
+  position: relative;
+}
+
+:where(.service, .portfolio, .blog) .container .desc p {
+  font-size: 16px;
+}
+
+:where(.service, .portfolio, .blog) .container .desc p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 5px;
+  background-color: var(--blue-color);
 }
 
 /*
@@ -406,30 +425,6 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
-.portfolio .container h2 {
-  font-size: 48px;
-  line-height: 57.6px;
-}
-
-.portfolio .container .desc {
-  position: relative;
-}
-
-.portfolio .container .desc p {
-  font-size: 16px;
-}
-
-.portfolio .container .desc p::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 5px;
-  background-color: var(--blue-color);
-}
-
 .portfolio-header {
   text-align: center;
   margin: 50px 0;
@@ -445,7 +440,7 @@ header .main-text :where(h2, p) {
   margin-bottom: 30px;
 }
 
-.portfolio-item .img-contain{
+.portfolio-item .img-contain {
   overflow: hidden;
 }
 
@@ -478,10 +473,9 @@ header .main-text :where(h2, p) {
   color: #777;
 }
 
-.portfolio .txt-icon svg{
+.portfolio .txt-icon svg {
   color: var(--blue-color);
   font-size: 2.5rem;
-
 }
 
 /* 
@@ -543,5 +537,57 @@ header .main-text :where(h2, p) {
 /* 
 =================================================
                 End Slider
+=================================================
+*/
+/* 
+=================================================
+                Start Blog
+=================================================
+*/
+
+.blog-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card .category {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--blue-color);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.blog-card .content {
+  padding: 15px;
+}
+
+.blog-card .author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.blog-card .author img {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+/* 
+=================================================
+                End Blog
 =================================================
 */

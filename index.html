@@ -23,30 +23,9 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
-<!-- 
-<style>
-	.scroll-to-top {
-		position: fixed;
-		bottom: 30px;
-		right: 30px;
-		background-color: #007bff;
-		color: white;
-		padding: 10px 20px;
-		border-radius: 50px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		text-align: center;
-		text-decoration: none;
-		font-size: 18px;
-		display: block;
-	}
-
-	.scroll-to-top:hover {
-		background-color: #0056b3;
-		box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	}
-</style> -->
 
 <body>
+
 	<!-- 
 	============================
 					Start NavBar
@@ -84,7 +63,7 @@
 						<a class="services nav-link text-white text-uppercase" href="#services">services</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="work nav-link text-white text-uppercase" href="#work">work</a>
+						<a class="work nav-link text-white text-uppercase" href="#portfolio">work</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
 						<a class="blog nav-link text-white text-uppercase" href="#blog">blog</a>
@@ -124,7 +103,7 @@
 		============================
 		-->
 
-	<header id="home" class="home container-fluid">
+	<header id="home" class="home container-fluid position-relative z-1">
 		<div class="inner row">
 			<div
 				class="main-text col-sm-8 m-auto text-center text-white d-flex justify-content-center align-items-center flex-column vh-100">
@@ -153,7 +132,8 @@
 			<div class="inner shadow">
 				<div class="row p-lg-4 p-2 px-lg-5">
 					<div class="skills d-md-flex flex-md-column col-lg-6 ">
-						<div class="info d-md-flex justify-content-md-bjustify-content-between align-items-center align-items--md-center col-md-12">
+						<div
+							class="info d-md-flex justify-content-md-bjustify-content-between align-items-center align-items--md-center col-md-12">
 							<div class="about-img mb-3 ms-2 col-md-6 col-lg-4 col-lg-4">
 								<img class="rounded-4" src="images/testimonial-2.jpg" alt="Morgan Freeman">
 							</div>
@@ -218,7 +198,7 @@
 	<section id="services" class="services">
 		<div class="container text-center my-5">
 			<div class="desc">
-				<h2 class="mb-2 fw-bold">SERVICES</h2>
+				<h2 class="mb-2 fw-bold text-uppercase">services</h2>
 				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -344,10 +324,10 @@
 		============================
 	-->
 
-	<div class="portfolio">
-		<div class="container  my-5">
+	<div id="portfolio" class="portfolio">
+		<div class="container my-5">
 			<div class="desc text-center">
-				<h2 class="mb-2 fw-bold">SERVICES</h2>
+				<h2 class="mb-2 fw-bold text-uppercase">portfolio</h2>
 				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
@@ -433,7 +413,6 @@
 		============================
 	-->
 
-
 	<!-- 
 		============================
 					Start Carousel
@@ -496,19 +475,91 @@
 		============================
 	-->
 
-	<!-- 
+	<div class="blog" id="blog">
+		<div class="container my-5">
+			<div class="desc text-center">
+				<h2 class="mb-2 fw-bold text-uppercase">blog</h2>
+				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<img src="images/post-1.jpg" alt="Travel Image">
+						<div class="category text-uppercase">travel</div>
+						<div class="content">
+							<h5>See more ideas about Travel</h5>
+							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
+							<div class="author d-flex justify-content-between">
+								<div class="left">
+									<img src="images/testimonial-2.jpg" alt="Author Image">
+									<span>Morgan Freeman</span>
+								</div>
+								<div class="time">
+									<i class="fa-regular fa-clock"></i>
+									<span>10 min</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<img src="images/post-2.jpg" alt="Web Design Image">
+						<div class="category text-uppercase">wep design</div>
+						<div class="content">
+							<h5>See more ideas about Travel</h5>
+							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
+							<div class="author d-flex justify-content-between">
+								<div class="left">
+									<img src="images/testimonial-2.jpg" alt="Author Image">
+									<span>Morgan Freeman</span>
+								</div>
+								<div class="time">
+									<i class="fa-regular fa-clock"></i>
+									<span>10 min</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-card">
+						<img src="images/post-3.jpg" alt="Lifestyle Image">
+						<div class="category text-uppercase">wep design</div>
+						<div class="content">
+							<h5>See more ideas about Lifestyle</h5>
+							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
+							<div class="author d-flex justify-content-between">
+								<div class="left">
+									<img src="images/testimonial-2.jpg" alt="Author Image">
+									<span>Morgan Freeman</span>
+								</div>
+								<div class="time">
+									<i class="fa-regular fa-clock"></i>
+									<span>10 min</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<!-- 
 		============================
-					End Blo
+					End Blog
 		============================
 	-->
 
 
 
 
-	<!-- <a href="#top" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a> -->
+<a href="#top" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a>
 
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
 </body>
 
 </html>
