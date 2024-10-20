@@ -296,7 +296,6 @@ header .main-text :where(h2, p) {
 
 #services .container .desc p {
   font-size: 16px;
-  /* line-height:24px; */
 }
 
 #services .container .desc p::after {
@@ -401,6 +400,102 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
+/* 
+=================================================
+                Start Portfolio
+=================================================
+*/
+
+.portfolio .container h2 {
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+.portfolio .container .desc {
+  position: relative;
+}
+
+.portfolio .container .desc p {
+  font-size: 16px;
+}
+
+.portfolio .container .desc p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 5px;
+  background-color: var(--blue-color);
+}
+
+.portfolio-header {
+  text-align: center;
+  margin: 50px 0;
+}
+.portfolio-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.portfolio-header p {
+  color: #777;
+}
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item .img-contain{
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s linear;
+}
+
+.portfolio .portfolio-item:hover img {
+  transform: scale(1.1);
+}
+.portfolio-item .details {
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.portfolio-item .details h5 {
+  margin: 0 0 10px;
+}
+.portfolio-item .details a {
+  color: #007bff;
+  text-decoration: none;
+}
+.portfolio-item .details a:hover {
+  text-decoration: underline;
+}
+.portfolio-item .details .date {
+  color: #777;
+}
+
+.portfolio .txt-icon svg{
+  color: var(--blue-color);
+  font-size: 2.5rem;
+
+}
+
+/* 
+=================================================
+                End Portfolio
+=================================================
+*/
+
+/* 
+=================================================
+                Start Slider
+=================================================
+*/
+
 .slider {
   background-image: url(../images/overlay-bg.jpg);
   background-color: var(--blue-color);
@@ -408,28 +503,28 @@ header .main-text :where(h2, p) {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 5% 0;
+  padding-bottom: 5%;
+}
+
+.slider .carousel-item {
+  position: static;
+  padding: 10% 0;
 }
 
 .slider .img-contain {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   overflow: hidden;
   position: relative;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50% , -90%);
-}
-
-.slider .carousel-inner{
-  padding-top: 15%;
+  transform: translate(-50%, -30%);
 }
 
 .slider h5 {
   font-size: 22.4px;
   line-height: 33.6px;
-  margin-top: 16px;
   font-weight: 600;
 }
 
@@ -438,3 +533,15 @@ header .main-text :where(h2, p) {
   line-height: 30px;
   font-weight: 300;
 }
+
+.slider button[type="button"] {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+}
+
+/* 
+=================================================
+                End Slider
+=================================================
+*/
