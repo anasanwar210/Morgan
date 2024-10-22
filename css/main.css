@@ -28,7 +28,6 @@ body:has(.blog:target) a[href="#blog"] {
 .scroll-to-top {
   bottom: 30px;
   right: 30px;
-  display: none;
 }
 
 .scroll-to-top:hover {
