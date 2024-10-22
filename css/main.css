@@ -20,8 +20,10 @@ body:has(.home:target) a[href="#home"],
 body:has(.about:target) a[href="#about"],
 body:has(.services:target) a[href="#services"],
 body:has(.portfolio:target) a[href="#portfolio"],
-body:has(.blog:target) a[href="#blog"] {
+body:has(.blog:target) a[href="#blog"],
+body:has(.contact-us:target) a[href="#contact-us"] {
   border-bottom: 2px solid #fff;
+  width: 65%;
 }
 
 /* Back To Top */
@@ -115,13 +117,15 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item {
   padding: 0 2%;
 }
 
+
+
 nav .container .navbar-collapse ul.navbar-nav li.nav-item::after {
   content: "";
   position: absolute;
   border-bottom: 2px solid #fff;
   width: 0;
   bottom: 14%;
-  left: 15%;
+  left: 10%;
   transition: width 0.3s linear;
 }
 
