@@ -1,6 +1,7 @@
 :root {
   --blue-color: rgb(0, 120, 255);
   --text-color: rgb(78, 78, 78);
+  --input-border: #dee2e6;
 }
 
 body {
@@ -25,18 +26,9 @@ body:has(.blog:target) a[href="#blog"] {
 
 /* Back To Top */
 .scroll-to-top {
-  position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
-  display: block;
+  display: none;
 }
 
 .scroll-to-top:hover {
@@ -45,20 +37,16 @@ body:has(.blog:target) a[href="#blog"] {
 }
 
 /* Global */
-:where(.service, .portfolio, .blog) .container h2 {
+:where(#services, .portfolio, .blog) .container h2 {
   font-size: 48px;
   line-height: 57.6px;
 }
 
-:where(.service, .portfolio, .blog) .container .desc {
-  position: relative;
-}
-
-:where(.service, .portfolio, .blog) .container .desc p {
+:where(#services, .portfolio, .blog) .container .desc p {
   font-size: 16px;
 }
 
-:where(.service, .portfolio, .blog) .container .desc p::after {
+:where(#services, .portfolio, .blog) .container .desc p::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -67,6 +55,24 @@ body:has(.blog:target) a[href="#blog"] {
   width: 40px;
   height: 5px;
   background-color: var(--blue-color);
+}
+
+.about .container .about-me h2,
+footer .container .desc h2 {
+  font-size: 32px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.about .container .about-me h2::after,
+footer .container .desc h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 80%;
+  border-bottom: 3px solid var(--blue-color);
 }
 
 /*
@@ -79,22 +85,16 @@ nav {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-nav input {
-  display: none;
-}
-
 nav .container h1 > a {
   font-size: 1.75rem;
   line-height: 2.1rem;
   letter-spacing: 0.0625rem;
-  text-transform: uppercase;
 }
 
 nav div.collapse ul li > a {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 nav div.collapse ul.dropdown-menu li > a {
@@ -130,11 +130,6 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item:hover::after {
   width: 45%;
 }
 
-nav.navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
-}
-
 /* 
 =================================================
                   End Navbar
@@ -167,8 +162,8 @@ header .main-text :where(h2, p) {
 }
 .animated .typewriter::before {
   content: "";
-  border-right: 7px solid white;
-  animation: blink 0.9s infinite, typing 10s infinite;
+  border-right: 5px solid white;
+  animation: blink 0.5s infinite, typing 15s infinite;
 }
 
 @keyframes blink {
@@ -178,66 +173,122 @@ header .main-text :where(h2, p) {
 }
 
 @keyframes typing {
-  0%,
-  54.54%,
-  100% {
-    content: "de";
+  0%,19.98%,38.85%,100%{
+    content: "De";
   }
-  3.03%,
-  51.51% {
-    content: "dev";
+  1.11%,18.87%{
+    content: "Dev";
   }
-  6.06%,
-  48.48% {
-    content: "deve";
+  2.22%,17.76%{
+    content: "Deve";
   }
-  9.09%,
-  45.45% {
-    content: "devel";
+  3.33%,16.65%{
+    content: "Devel";
   }
-  12.12%,
-  42.42% {
-    content: "develo";
+  4.44%,15.54%{
+    content: "Develo";
   }
-  15.15%,
-  39.39% {
-    content: "develop";
+  5.55%,14.43%{
+    content: "Develop";
   }
-  18.18%,
-  36.36% {
-    content: "develope";
+  6.66%,13.32%{
+    content: "Develope";
   }
-  21.21%,
-  24.24%,
-  27.27%,
-  30.3% {
-    content: "developer";
+  7.77%,8.88%,9.99%,11.1%,12.21%{
+    content: "Developer";
   }
-  57.57%,
-  96.96% {
-    content: "des";
+  21.09%,37.74%{
+    content: "Des";
   }
-  60.6%,
-  93.93% {
-    content: "desi";
+  22.2%,36.63%{
+    content: "Desi";
   }
-  63.63%,
-  90.9% {
-    content: "desig";
+  23.31%,35.52%{
+    content: "Desig";
   }
-  66.66%,
-  87.87% {
-    content: "design";
+  24.42%,34.41%{
+    content: "Design";
   }
-  69.69%,
-  84.84% {
-    content: "designe";
+  25.53%,33.3%{
+    content: "Designe";
   }
-  72.72%,
-  75.75%,
-  78.78%,
-  81% {
-    content: "designer";
+  26.64%,28.86%,29.97%,31.08%,32.19%{
+    content: "Designer";
+  }
+  39.96%{
+    content: "D";
+  }
+  41.09%,67.71%,97.68%{
+    content: "";
+  }
+  42.18%,66.6%{
+    content: "F";
+  }
+  43.29%,65.49%{
+    content: "Fr";
+  }
+  44.4%,64.38%{
+    content: "Fre";
+  }
+  45.51%,63.27%{
+    content: "Free";
+  }
+  46.62%,62.16%{
+    content: "Freel";
+  }
+  47.73%,61.05%{
+    content: "Freela";
+  }
+  48.84%,59.94%{
+    content: "Freelan";
+  }
+  49.95%,58.83%{
+    content: "Freelanc";
+  }
+  51.06%,57.72%{
+    content: "Freelance";
+  }
+  52.17%,53.28%,54.39%,55.5%,56.61%{
+    content: "Freelancer";
+  }
+  68.82%,96.57%{
+    content: "P";
+  }
+  69.93%,95.46%{
+    content: "Ph";
+  }
+  71.04%,94.35%{
+    content: "Pho";
+  }
+  72.15%,93.24%{
+    content: "Phot";
+  }
+  73.26%,92.13%{
+    content: "Photo";
+  }
+  74.37%,91.02%{
+    content: "Photog";
+  }
+  75.48%,89.91%{
+    content: "Photogr";
+  }
+  76.59%,88.8%{
+    content: "Photogra";
+  }
+  77.7%,87.69%{
+    content: "Photograp";
+  }
+  78.81%,86.58%{
+    content: "Photograph";
+  }
+  79.92%,85.47%{
+    content: "Photographe";
+  }
+  81.03%,82.14%,83.25%,84.36%{
+    content: "Photographer";
+  }
+  98.79%{
+    content: "D";
   }
 }
 
@@ -256,35 +307,17 @@ header .main-text :where(h2, p) {
   padding: 6% 0;
 }
 
-.about .container .skills ul li {
-  font-size: 1rem;
-  /* line-height: 34px; */
-}
-
-.about .container .skills ul li span {
-  font-size: 1.1rem;
-}
-
 .about .container .skills .prog h2 {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-.about .container .about-me h2 {
-  font-size: 32px;
-  font-weight: 500;
-  position: relative;
-  width: fit-content;
+.about .container .skills ul li {
+  font-size: 1rem;
 }
 
-.about .container .about-me h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 10px;
-  width: 80%;
-  border-bottom: 3px solid var(--blue-color);
+.about .container .skills ul li span {
+  font-size: 1.1rem;
 }
 
 .about .container .about-me p {
@@ -304,48 +337,10 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
-#services .container h2 {
-  font-size: 48px;
-  line-height: 57.6px;
-}
-
-#services .container .desc {
-  position: relative;
-}
-
-#services .container .desc p {
-  font-size: 16px;
-}
-
-#services .container .desc p::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 5px;
-  background-color: var(--blue-color);
-}
-
-#services .service-card {
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
 #services .service-card .icon {
   width: 100px;
   height: 100px;
-  font-size: 40px;
-  color: #000;
-  padding: 12%;
-  margin: auto;
   border: 10px solid var(--blue-color);
-  border-radius: 50%;
   transition: all 0.3s linear;
 }
 
@@ -391,16 +386,9 @@ header .main-text :where(h2, p) {
 }
 
 #counter .icon {
-  font-size: 32px;
-  margin: auto;
   border: 10px solid rgb(205, 225, 248);
-  border-radius: 50%;
   width: 90px;
   height: 90px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
 }
 
 #counter .stat span {
@@ -425,40 +413,18 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
-.portfolio-header {
-  text-align: center;
-  margin: 50px 0;
-}
-.portfolio-header h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.portfolio-header p {
-  color: #777;
-}
-.portfolio-item {
-  margin-bottom: 30px;
-}
-
 .portfolio-item .img-contain {
   overflow: hidden;
 }
 
 .portfolio-item img {
-  width: 100%;
-  height: auto;
   transition: transform 0.3s linear;
 }
 
 .portfolio .portfolio-item:hover img {
   transform: scale(1.1);
 }
-.portfolio-item .details {
-  padding: 15px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-top: none;
-}
+
 .portfolio-item .details h5 {
   margin: 0 0 10px;
 }
@@ -545,43 +511,27 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
-.blog-card {
+#blog .blog-card {
   border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  position: relative;
 }
 
-.blog-card img {
+#blog .blog-card img {
   width: 100%;
   height: auto;
 }
 
-.blog-card .category {
-  position: absolute;
-  bottom: 30%;
+#blog .blog-card .category {
+  bottom: 1;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--blue-color);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
 }
 
-.blog-card .content {
-  padding: 15px;
+#blog .category h6{
+  font-size: .7rem;
 }
 
-.blog-card .author {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.blog-card .author img {
-  border-radius: 50%;
-  margin-right: 10px;
+#blog .blog-card .author img {
   width: 30px;
   height: 30px;
 }
@@ -597,10 +547,92 @@ header .main-text :where(h2, p) {
 =================================================
 */
 
+footer {
+  background-image: url(../images/overlay-bg.jpg);
+  background-color: var(--blue-color);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer .container .desc h2::after {
+  width: 15%;
+}
+
+footer :where(input, textarea) {
+  border: 1px solid var(--input-border);
+  transition: outline 0.1s linear;
+}
+
+footer textarea {
+  resize: none;
+}
+
+/* footer input */
+footer :where(input, textarea):focus {
+  outline: 2px solid var(--blue-color);
+}
+
+footer .get-in-touch p {
+  color: #4E4E4E;
+}
+
+footer .get-in-touch ul li {
+  font-size: 16px;
+  line-height: 32px;
+  color: #4E4E4E;
+}
+
+footer .get-in-touch ul.location li svg {
+  color: var(--blue-color);
+}
+
+footer .get-in-touch .social li{
+  border: 3px solid var(--blue-color);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s linear;
+}
+
+footer .get-in-touch .social li:hover{
+  border-color:#cde1f8;
+  background-color: var(--blue-color);
+}
+
+footer .get-in-touch .social li:hover svg{
+  color: #fff;
   
+}
+
+footer .get-in-touch .social li svg{
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  color: #000;
+}
 
 /* 
 =================================================
                 End Footer
+=================================================
+*/
+/* 
+=================================================
+              Start Main Footer
+=================================================
+*/
+
+  .main-footer{
+    background-color: #0062d3;
+    font-size:17px;
+  } 
+  .main-footer .container p{
+    margin-bottom: .7rem;
+  }
+
+/*
+=================================================
+              End Main Footer
 =================================================
 */

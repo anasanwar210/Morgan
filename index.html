@@ -38,9 +38,9 @@
 
 	<nav class="navbar navbar-expand-lg fixed-top">
 		<div class="container">
-			<h1><a class="navbar-brand text-white text-capitalize fw-bold" href="#">DevFolio</a></h1>
+			<h1><a class="navbar-brand text-white text-uppercase fw-bold" href="#">DevFolio</a></h1>
 			<div class="bars d-lg-none">
-				<input type="checkbox" name="menu" id="menu" />
+				<input type="checkbox" name="menu" id="menu" class="d-none" />
 				<label for="menu" id="overlay"></label>
 				<label for="menu" class="open-menu text-white">
 					<i class="fa-solid fa-bars"></i>
@@ -48,28 +48,30 @@
 			</div>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item p-2 p-lg-2 x-mark d-lg-none">
+					<li class="nav-item me-2 p-2 p-lg-2 x-mark d-lg-none">
 						<label for="menu" class="close-menu">
 							<i class="fa-solid fa-xmark"></i>
 						</label>
 					</li>
 					<li class="nav-item p-2 p-lg-2 ">
-						<a class="home nav-link text-white text-uppercase active" aria-current="page" href="#home">home</a>
+						<a class="home nav-link text-white text-uppercase ps-0 pe-0 active" aria-current="page"
+							href="#home">home</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="about nav-link text-white text-uppercase" aria-current="page" href="#about">about</a>
+						<a class="about nav-link text-white text-uppercase ps-0 pe-0" aria-current="page" href="#about">about</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="services nav-link text-white text-uppercase" href="#services">services</a>
+						<a class="services nav-link text-white text-uppercase ps-0 pe-0" href="#services">services</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="work nav-link text-white text-uppercase" href="#portfolio">work</a>
+						<a class="work nav-link text-white text-uppercase ps-0 pe-0" href="#portfolio">work</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="blog nav-link text-white text-uppercase" href="#blog">blog</a>
+						<a class="blog nav-link text-white text-uppercase ps-0 pe-0" href="#blog">blog</a>
 					</li>
 					<li class="nav-item dropdown d-md-flex justify-content-md-center align-items-md-center">
-						<a class="nav-link text-white dropdown-toggle" href="#" data-bs-toggle="dropdown"> Deep Dropdown </a>
+						<a class="nav-link text-white dropdown-toggle ps-0 pe-0" href="#" data-bs-toggle="dropdown"> Deep Dropdown
+						</a>
 						<ul class="dropdown-menu dropdown-menu-right">
 							<li><a class="dropdown-item" href="#"> Dropdown item 1</a></li>
 							<li><a class="dropdown-item" href="#"> Dropdown item 2 </a></li>
@@ -85,7 +87,7 @@
 						</ul>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="contact nav-link  text-white text-uppercase" href="#contact">contact</a>
+						<a class="contact nav-link  text-white text-uppercase ps-0 pe-0" href="#contact">contact</a>
 					</li>
 				</ul>
 			</div>
@@ -169,7 +171,7 @@
 						</div>
 					</div>
 					<div class="about-me col-lg-6">
-						<h2 class="pb-2 mb-3">About Me</h2>
+						<h2 class="pb-2 mb-3 position-relative">About Me</h2>
 						<p class="lh-base">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat,
 							accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas
 							non nisi.
@@ -197,14 +199,15 @@
 	-->
 	<section id="services" class="services">
 		<div class="container text-center my-5">
-			<div class="desc">
+			<div class="desc text-center position-relative">
 				<h2 class="mb-2 fw-bold text-uppercase">services</h2>
 				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fas fa-briefcase"></i>
 						</div>
 						<h4>WEB DESIGN</h4>
@@ -213,8 +216,9 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fa-solid fa-list-check"></i>
 						</div>
 						<h4>WEB Development</h4>
@@ -223,8 +227,9 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fa-solid fa-chart-simple"></i>
 						</div>
 						<h4>Photography</h4>
@@ -233,8 +238,9 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fa-solid fa-binoculars"></i>
 						</div>
 						<h4>Responsive Design</h4>
@@ -243,8 +249,9 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fa-regular fa-sun"></i>
 						</div>
 						<h4>Graphic Design</h4>
@@ -253,8 +260,9 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-4">
-					<div class="service-card">
-						<div class="icon mb-4 d-flex justify-content-center align-items-center">
+					<div class="service-card text-center mb-4 shadow p-3 rounded-3 py-4">
+						<div
+							class="icon fs-2 text-black p-4 rounded-circle m-auto mb-4 d-flex justify-content-center align-items-center">
 							<i class="fa-regular fa-calendar-days"></i>
 						</div>
 						<h4>Marketing Services</h4>
@@ -281,28 +289,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 mb-3 stat">
-					<div class="icon">
+					<div class="icon d-flex justify-content-center align-items-center m-auto rounded-circle text-center p-4 fs-2">
 						<i class="fas fa-check"></i>
 					</div>
 					<span class="fs-">450</span>
 					<h4>WORKS COMPLETED</h4>
 				</div>
 				<div class="col-md-3 mb-3 stat">
-					<div class="icon">
+					<div class="icon d-flex justify-content-center align-items-center m-auto rounded-circle text-center p-4 fs-2">
 						<i class="fas fa-file-alt"></i>
 					</div>
 					<span class="fs-">25</span>
 					<h4>YEARS OF EXPERIENCE</h4>
 				</div>
 				<div class="col-md-3 mb-3 stat">
-					<div class="icon">
+					<div class="icon d-flex justify-content-center align-items-center m-auto rounded-circle text-center p-4 fs-2">
 						<i class="fas fa-users"></i>
 					</div>
 					<span class="fs-">550</span>
 					<h4>TOTAL CLIENTS</h4>
 				</div>
 				<div class="col-md-3 mb-3 stat">
-					<div class="icon">
+					<div class="icon d-flex justify-content-center align-items-center m-auto rounded-circle text-center p-4 fs-2">
 						<i class="fas fa-award"></i>
 					</div>
 					<span class="fs-">48</span>
@@ -326,16 +334,16 @@
 
 	<div id="portfolio" class="portfolio">
 		<div class="container my-5">
-			<div class="desc text-center">
+			<div class="desc text-center position-relative">
 				<h2 class="mb-2 fw-bold text-uppercase">portfolio</h2>
 				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-1.jpg" alt="Portfolio Item 1">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-1.jpg" alt="Portfolio Item 1">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Lorem impsum dolor</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -343,11 +351,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-2.jpg" alt="Portfolio Item 2">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-2.jpg" alt="Portfolio Item 2">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Loreda Cuno Nere</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -355,11 +363,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-3.jpg" alt="Portfolio Item 3">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-3.jpg" alt="Portfolio Item 3">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Mavrito Lana Dere</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -367,11 +375,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-4.jpg" alt="Portfolio Item 4">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-4.jpg" alt="Portfolio Item 4">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Bindo Laro Cado</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -379,11 +387,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-5.jpg" alt="Portfolio Item 5">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-5.jpg" alt="Portfolio Item 5">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Studio Lena Mado</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -391,11 +399,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-4 portfolio-item">
-					<div class="img-contain">
-						<img src="images/work-6.jpg" alt="Portfolio Item 6">
+				<div class="col-md-6 col-lg-4 portfolio-item mb-4">
+					<div class="img-contain overflow-hidden">
+						<img class="w-100" src="images/work-6.jpg" alt="Portfolio Item 6">
 					</div>
-					<div class="details">
+					<div class="details  p-2 border">
 						<h5>Studio Big Bang</h5>
 						<div class="txt-icon d-flex justify-content-between align-items-center">
 							<span class="date"><a href="#">Web Design</a> / 18 Sep. 2018</span>
@@ -477,66 +485,92 @@
 
 	<div class="blog" id="blog">
 		<div class="container my-5">
-			<div class="desc text-center">
+			<div class="desc text-center position-relative">
 				<h2 class="mb-2 fw-bold text-uppercase">blog</h2>
 				<p class="mb-5 pb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<div class="blog-card">
+					<div class="blog-card position-relative overflow-hidden mb-2 rounded-2">
 						<img src="images/post-1.jpg" alt="Travel Image">
-						<div class="category text-uppercase">travel</div>
+						<div
+							class="category d-flex justify-content-center align-items-center position-absolute text-white rounded-2 text-uppercase py-2 px-3">
+							<h6 class="mb-0">travel</h6>
+						</div>
 						<div class="content">
-							<h5>See more ideas about Travel</h5>
-							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
-							<div class="author d-flex justify-content-between">
-								<div class="left">
-									<img src="images/testimonial-2.jpg" alt="Author Image">
-									<span>Morgan Freeman</span>
-								</div>
-								<div class="time">
-									<i class="fa-regular fa-clock"></i>
-									<span>10 min</span>
+							<div class="inner p-3">
+								<h5>See more ideas about Travel</h5>
+								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+									convallis a pellentesque nec, egestas non nisi.</p>
+							</div>
+							<div class="author border-top">
+								<div class="inner py-2 px-3 d-flex justify-content-between align-items-center">
+									<div class="left d-flex justify-content-center align-items-center">
+										<img class="rounded-circle me-2" src="images/testimonial-2.jpg" alt="Author Image">
+										<span>Morgan Freeman</span>
+									</div>
+									<div class="time">
+										<i class="fa-regular fa-clock"></i>
+										<span>10 min</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="blog-card">
+					<div class="blog-card position-relative overflow-hidden mb-2 rounded-2">
 						<img src="images/post-2.jpg" alt="Web Design Image">
-						<div class="category text-uppercase">wep design</div>
+						<div
+							class="category d-flex justify-content-center align-items-center position-absolute text-white rounded-2 text-uppercase p-2">
+							<h6 class="mb-0">wep design</h6>
+						</div>
 						<div class="content">
-							<h5>See more ideas about Travel</h5>
-							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
-							<div class="author d-flex justify-content-between">
-								<div class="left">
-									<img src="images/testimonial-2.jpg" alt="Author Image">
-									<span>Morgan Freeman</span>
-								</div>
-								<div class="time">
-									<i class="fa-regular fa-clock"></i>
-									<span>10 min</span>
+							<div class="inner p-3">
+								<h5>See more ideas about Travel</h5>
+								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+									convallis a pellentesque nec, egestas non nisi.</p>
+							</div>
+							<div class="author border-top">
+								<div class="inner py-2 px-3 d-flex justify-content-between align-items-center">
+									<div class="left d-flex justify-content-center align-items-center">
+										<img class="rounded-circle me-2" src="images/testimonial-2.jpg" alt="Author Image">
+										<span>Morgan Freeman</span>
+									</div>
+									<div class="time">
+										<i class="fa-regular fa-clock"></i>
+										<span>10 min</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="blog-card">
+					<div class="blog-card position-relative overflow-hidden mb-2 rounded-2">
 						<img src="images/post-3.jpg" alt="Lifestyle Image">
-						<div class="category text-uppercase">wep design</div>
+						<div
+							class="category d-flex justify-content-center align-items-center position-absolute text-white rounded-2 text-uppercase p-2">
+							<h6 class="mb-0">
+								wep design
+							</h6>
+						</div>
 						<div class="content">
-							<h5>See more ideas about Lifestyle</h5>
-							<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus.</p>
-							<div class="author d-flex justify-content-between">
-								<div class="left">
-									<img src="images/testimonial-2.jpg" alt="Author Image">
-									<span>Morgan Freeman</span>
-								</div>
-								<div class="time">
-									<i class="fa-regular fa-clock"></i>
-									<span>10 min</span>
+							<div class="inner p-3">
+								<h5>See more ideas about Travel</h5>
+								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+									convallis a pellentesque nec, egestas non nisi.</p>
+							</div>
+							<div class="author border-top">
+								<div class="inner py-2 px-3 d-flex justify-content-between align-items-center">
+									<div class="left d-flex justify-content-center align-items-center">
+										<img class="rounded-circle me-2" src="images/testimonial-2.jpg" alt="Author Image">
+										<span>Morgan Freeman</span>
+									</div>
+									<div class="time">
+										<i class="fa-regular fa-clock"></i>
+										<span>10 min</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -556,58 +590,63 @@
 		============================
 	-->
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-					<div class="form-title">
-						<h2>
+	<footer class="shadow-sm pt-5 pb-4">
+		<div class="container my-5">
+			<div class="row bg-white shadow py-5 px-4 content">
+				<div class="col-md-6">
+					<div class="desc mb-4 position-relative pb-1">
+						<h2 class="">
 							send message us
 						</h2>
 					</div>
 					<form>
-						<input type="text" name="" id="">
-						<input type="email" name="" id="">
-						<input type="text" name="" id="">
-						<textarea name="" id="" rows="10"></textarea>
-						<button type="submit"></button>
+						<input type="text" name="fname" id="fname" placeholder="Name" class="my-1 w-100 p-2 fs-6 rounded-2">
+						<input type="email" name="email" id="email" placeholder="Your Email" class="my-1 w-100 p-2 fs-6 rounded-2">
+						<input type="text" name="subject" id="subject" placeholder="Subject" class="my-1 w-100 p-2 fs-6 rounded-2">
+						<textarea name="message" id="message" rows="5" placeholder="Message"
+							class="my-1 w-100 p-2 fs-6 rounded-2"></textarea>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary text-capitalize rounded-4 fs-5 my-2">send message</button>
+						</div>
 					</form>
 				</div>
-				<div class="col-6">
+				<div class="col-md-6">
 					<div class="get-in-touch">
-						<h2>
-							Get in Touch
-						</h2>
-						<p>
+						<div class="desc mb-4 position-relative pb-1">
+							<h2 class="">
+								get in touch
+							</h2>
+						</div>
+						<p class="fs-5 fw-light lh-base">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita
 							aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia
 							inventore?
 						</p>
-						<ul>
-							<li>
+						<ul class="list-unstyled location">
+							<li class="fs-6 lh-lg">
 								<i class="fa-solid fa-location-dot"></i>
-								<span> 329 WASHINGTON ST BOSTON, MA 02108</span>
+								<span class="ms-2"> 329 WASHINGTON ST BOSTON, MA 02108</span>
 							</li>
-							<li>
-								<i class="fa-solid fa-mobile"></i>
-								<span> 329 WASHINGTON ST BOSTON, MA 02108</span>
+							<li class="fs-6 lh-lg">
+								<i class="fa-solid fa-mobile-screen"></i>
+								<span class="ms-2">(617) 557-0089</span>
 							</li>
-							<li>
-								<i class="fa-solid fa-box"></i>
-								<span> 329 WASHINGTON ST BOSTON, MA 02108</span>
+							<li class="fs-6 lh-lg">
+								<i class="fa-regular fa-envelope"></i>
+								<span class="ms-2">contact@example.com</span>
 							</li>
 						</ul>
-						<ul>
-							<li>
+						<ul class="social list-unstyled d-flex justify-content-evenly col-sm-12 col-md-8 col-lg-6">
+							<li class="rounded-circle d-flex justify-content-center align-items-center">
 								<i class="fa-brands fa-facebook"></i>
 							</li>
-							<li>
+							<li class="rounded-circle d-flex justify-content-center align-items-center">
 								<i class="fa-brands fa-instagram"></i>
 							</li>
-							<li>
+							<li class="rounded-circle d-flex justify-content-center align-items-center">
 								<i class="fa-brands fa-linkedin"></i>
 							</li>
-							<li>
+							<li class="rounded-circle d-flex justify-content-center align-items-center">
 								<i class="fa-brands fa-twitter"></i>
 							</li>
 						</ul>
@@ -622,11 +661,30 @@
 					End Footer
 		============================
 	-->
+	<!-- 
+		============================
+				Start Main Footer
+		============================
+	-->
+
+	<div class="main-footer py-4">
+		<div class="container d-flex justify-content-center align-items-center flex-column text-white">
+			<p>&copy; Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
+			<h6>Designed by <a href="https://getbootstrap.com/" class="text-white text-decoration-none">BootstrapMade</a></h6>
+		</div>
+	</div>
+
+	<!-- 
+		============================
+				End Main Footer
+		============================
+	-->
 
 
 
-
-	<a href="#top" class="scroll-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+	<a href="#"
+		class="scroll-to-top position-fixed bg-primary text-white px-3 py-2 rounded-circle shadow text-center text-decoration-none fs-6"><i
+			class="fa-solid fa-arrow-up"></i></a>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/all.min.js"></script>
