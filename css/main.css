@@ -117,8 +117,6 @@ nav .container .navbar-collapse ul.navbar-nav li.nav-item {
   padding: 0 2%;
 }
 
-
-
 nav .container .navbar-collapse ul.navbar-nav li.nav-item::after {
   content: "";
   position: absolute;
@@ -166,7 +164,7 @@ header .main-text :where(h2, p) {
 .animated .typewriter::before {
   content: "";
   border-right: 5px solid white;
-  animation: blink 0.5s infinite, typing 15s infinite;
+  animation: blink 0.5s infinite, typing 20s infinite;
 }
 
 @keyframes blink {
@@ -176,121 +174,172 @@ header .main-text :where(h2, p) {
 }
 
 @keyframes typing {
-  0%,19.98%,38.85%,100%{
+  0%,
+  19.98%,
+  38.85%,
+  100% {
     content: "De";
   }
-  1.11%,18.87%{
+  1.11%,
+  18.87% {
     content: "Dev";
   }
-  2.22%,17.76%{
+  2.22%,
+  17.76% {
     content: "Deve";
   }
-  3.33%,16.65%{
+  3.33%,
+  16.65% {
     content: "Devel";
   }
-  4.44%,15.54%{
+  4.44%,
+  15.54% {
     content: "Develo";
   }
-  5.55%,14.43%{
+  5.55%,
+  14.43% {
     content: "Develop";
   }
-  6.66%,13.32%{
+  6.66%,
+  13.32% {
     content: "Develope";
   }
-  7.77%,8.88%,9.99%,11.1%,12.21%{
+  7.77%,
+  8.88%,
+  9.99%,
+  11.1%,
+  12.21% {
     content: "Developer";
   }
-  21.09%,37.74%{
+  21.09%,
+  37.74% {
     content: "Des";
   }
-  22.2%,36.63%{
+  22.2%,
+  36.63% {
     content: "Desi";
   }
-  23.31%,35.52%{
+  23.31%,
+  35.52% {
     content: "Desig";
   }
-  24.42%,34.41%{
+  24.42%,
+  34.41% {
     content: "Design";
   }
-  25.53%,33.3%{
+  25.53%,
+  33.3% {
     content: "Designe";
   }
-  26.64%,28.86%,29.97%,31.08%,32.19%{
+  26.64%,
+  28.86%,
+  29.97%,
+  31.08%,
+  32.19% {
     content: "Designer";
   }
-  39.96%{
+  39.96% {
     content: "D";
   }
-  41.09%,67.71%,97.68%{
+  41.09%,
+  67.71%,
+  97.68% {
     content: "";
   }
-  42.18%,66.6%{
+  42.18%,
+  66.6% {
     content: "F";
   }
-  43.29%,65.49%{
+  43.29%,
+  65.49% {
     content: "Fr";
   }
-  44.4%,64.38%{
+  44.4%,
+  64.38% {
     content: "Fre";
   }
-  45.51%,63.27%{
+  45.51%,
+  63.27% {
     content: "Free";
   }
-  46.62%,62.16%{
+  46.62%,
+  62.16% {
     content: "Freel";
   }
-  47.73%,61.05%{
+  47.73%,
+  61.05% {
     content: "Freela";
   }
-  48.84%,59.94%{
+  48.84%,
+  59.94% {
     content: "Freelan";
   }
-  49.95%,58.83%{
+  49.95%,
+  58.83% {
     content: "Freelanc";
   }
-  51.06%,57.72%{
+  51.06%,
+  57.72% {
     content: "Freelance";
   }
-  52.17%,53.28%,54.39%,55.5%,56.61%{
+  52.17%,
+  53.28%,
+  54.39%,
+  55.5%,
+  56.61% {
     content: "Freelancer";
   }
-  68.82%,96.57%{
+  68.82%,
+  96.57% {
     content: "P";
   }
-  69.93%,95.46%{
+  69.93%,
+  95.46% {
     content: "Ph";
   }
-  71.04%,94.35%{
+  71.04%,
+  94.35% {
     content: "Pho";
   }
-  72.15%,93.24%{
+  72.15%,
+  93.24% {
     content: "Phot";
   }
-  73.26%,92.13%{
+  73.26%,
+  92.13% {
     content: "Photo";
   }
-  74.37%,91.02%{
+  74.37%,
+  91.02% {
     content: "Photog";
   }
-  75.48%,89.91%{
+  75.48%,
+  89.91% {
     content: "Photogr";
   }
-  76.59%,88.8%{
+  76.59%,
+  88.8% {
     content: "Photogra";
   }
-  77.7%,87.69%{
+  77.7%,
+  87.69% {
     content: "Photograp";
   }
-  78.81%,86.58%{
+  78.81%,
+  86.58% {
     content: "Photograph";
   }
-  79.92%,85.47%{
+  79.92%,
+  85.47% {
     content: "Photographe";
   }
-  81.03%,82.14%,83.25%,84.36%{
+  81.03%,
+  82.14%,
+  83.25%,
+  84.36% {
     content: "Photographer";
   }
-  98.79%{
+  98.79% {
     content: "D";
   }
 }
@@ -445,6 +494,14 @@ header .main-text :where(h2, p) {
 .portfolio .txt-icon svg {
   color: var(--blue-color);
   font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.portfolio .left a {
+  color: #000;
+}
+.portfolio .left:hover a {
+  color: red !important;
 }
 
 /* 
@@ -530,8 +587,8 @@ header .main-text :where(h2, p) {
   background-color: var(--blue-color);
 }
 
-#blog .category h6{
-  font-size: .7rem;
+#blog .category h6 {
+  font-size: 0.7rem;
 }
 
 #blog .blog-card .author img {
@@ -578,37 +635,36 @@ footer :where(input, textarea):focus {
 }
 
 footer .get-in-touch p {
-  color: #4E4E4E;
+  color: #4e4e4e;
 }
 
 footer .get-in-touch ul li {
   font-size: 16px;
   line-height: 32px;
-  color: #4E4E4E;
+  color: #4e4e4e;
 }
 
 footer .get-in-touch ul.location li svg {
   color: var(--blue-color);
 }
 
-footer .get-in-touch .social li{
+footer .get-in-touch .social li {
   border: 3px solid var(--blue-color);
   width: 45px;
   height: 45px;
   transition: all 0.3s linear;
 }
 
-footer .get-in-touch .social li:hover{
-  border-color:#cde1f8;
+footer .get-in-touch .social li:hover {
+  border-color: #cde1f8;
   background-color: var(--blue-color);
 }
 
-footer .get-in-touch .social li:hover svg{
+footer .get-in-touch .social li:hover svg {
   color: #fff;
-  
 }
 
-footer .get-in-touch .social li svg{
+footer .get-in-touch .social li svg {
   cursor: pointer;
   padding: 10px;
   font-size: 20px;
@@ -626,13 +682,13 @@ footer .get-in-touch .social li svg{
 =================================================
 */
 
-  .main-footer{
-    background-color: #0062d3;
-    font-size:17px;
-  } 
-  .main-footer .container p{
-    margin-bottom: .7rem;
-  }
+.main-footer {
+  background-color: #0062d3;
+  font-size: 17px;
+}
+.main-footer .container p {
+  margin-bottom: 0.7rem;
+}
 
 /*
 =================================================

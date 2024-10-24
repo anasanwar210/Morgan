@@ -43,27 +43,27 @@
 				</label>
 			</div>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				<ul id="list-example" class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item me-2 p-2 p-lg-2 x-mark d-lg-none">
 						<label for="menu" class="close-menu">
 							<i class="fa-solid fa-xmark"></i>
 						</label>
 					</li>
 					<li class="nav-item p-2 p-lg-2 ">
-						<a class="home nav-link text-white text-uppercase ps-0 pe-0 active" aria-current="page"
+						<a class="home nav-link text-white text-uppercase ps-0 pe-0 active list-group-item list-group-item-action" aria-current="page"
 							href="#home">home</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="about nav-link text-white text-uppercase ps-0 pe-0" aria-current="page" href="#about">about</a>
+						<a class="about nav-link text-white text-uppercase ps-0 pe-0 list-group-item list-group-item-action" aria-current="page" href="#about">about</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="services nav-link text-white text-uppercase ps-0 pe-0" href="#services">services</a>
+						<a class="services nav-link text-white text-uppercase ps-0 pe-0 list-group-item list-group-item-action" href="#services">services</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="work nav-link text-white text-uppercase ps-0 pe-0" href="#portfolio">work</a>
+						<a class="work nav-link text-white text-uppercase ps-0 pe-0 list-group-item list-group-item-action" href="#portfolio">work</a>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="blog nav-link text-white text-uppercase ps-0 pe-0" href="#blog">blog</a>
+						<a class="blog nav-link text-white text-uppercase ps-0 pe-0 list-group-item list-group-item-action" href="#blog">blog</a>
 					</li>
 					<li class="nav-item dropdown d-md-flex justify-content-md-center align-items-md-center">
 						<a class="nav-link text-white dropdown-toggle ps-0 pe-0" href="#" data-bs-toggle="dropdown"> Deep Dropdown
@@ -83,7 +83,7 @@
 						</ul>
 					</li>
 					<li class="nav-item p-2 p-lg-2">
-						<a class="contact nav-link  text-white text-uppercase ps-0 pe-0" href="#contact-us">contact</a>
+						<a class="contact nav-link  text-white text-uppercase ps-0 pe-0 list-group-item list-group-item-action" href="#contact-us">contact</a>
 					</li>
 				</ul>
 			</div>
@@ -144,22 +144,22 @@
 						</div>
 						<div class="prog mb-5">
 							<h2>Skills</h2>
-							<p class="lh-lg mb-0 mt-3">HTML 85%</p>
+							<p class="lh-lg mb-0 mt-2">HTML 85%</p>
 							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0"
 								aria-valuemax="100">
 								<div class="progress-bar" style="width: 85%"></div>
 							</div>
-							<p class="lh-lg mb-0 mt-3">CSS3 75%</p>
+							<p class="lh-lg mb-0 mt-2">CSS3 75%</p>
 							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
 								aria-valuemax="100">
 								<div class="progress-bar" style="width: 75%"></div>
 							</div>
-							<p class="lh-lg mb-0 mt-3">PHP 50%</p>
+							<p class="lh-lg mb-0 mt-2">PHP 50%</p>
 							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
 								aria-valuemax="100">
 								<div class="progress-bar" style="width: 50%"></div>
 							</div>
-							<p class="lh-lg mb-0 mt-3">Javascript 90%</p>
+							<p class="lh-lg mb-0 mt-2">Javascript 90%</p>
 							<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0"
 								aria-valuemax="100">
 								<div class="progress-bar" style="width: 90%"></div>
@@ -432,7 +432,7 @@
 
 	<div id="slider" class="slider">
 		<div class=" container">
-			<div id="carouselExampleCaptions" class="carousel slide">
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
 						aria-current="true" aria-label="Slide 1"></button>
@@ -501,9 +501,9 @@
 							<h6 class="mb-0">travel</h6>
 						</div>
 						<div class="content">
-							<div class="inner p-3">
+							<div class="inner px-3 py-4">
 								<h5>See more ideas about Travel</h5>
-								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+								<p class="mb-0">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
 									convallis a pellentesque nec, egestas non nisi.</p>
 							</div>
 							<div class="author border-top">
@@ -529,9 +529,9 @@
 							<h6 class="mb-0">wep design</h6>
 						</div>
 						<div class="content">
-							<div class="inner p-3">
+							<div class="inner px-3 py-4">
 								<h5>See more ideas about Travel</h5>
-								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+								<p class="mb-0">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
 									convallis a pellentesque nec, egestas non nisi.</p>
 							</div>
 							<div class="author border-top">
@@ -559,16 +559,16 @@
 							</h6>
 						</div>
 						<div class="content">
-							<div class="inner p-3">
+							<div class="inner px-3 py-4">
 								<h5>See more ideas about Travel</h5>
-								<p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
+								<p class="mb-0">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa,
 									convallis a pellentesque nec, egestas non nisi.</p>
 							</div>
 							<div class="author border-top">
 								<div class="inner py-2 px-3 d-flex justify-content-between align-items-center">
 									<div class="left d-flex justify-content-center align-items-center">
 										<img class="rounded-circle me-2" src="images/testimonial-2.jpg" alt="Author Image">
-										<span>Morgan Freeman</span>
+										<a href="#" class="text-decoration-none text-black">Morgan Freeman</a>
 									</div>
 									<div class="time">
 										<i class="fa-regular fa-clock"></i>
